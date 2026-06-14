@@ -485,7 +485,6 @@ h3 {
 
 .certification-carousel {
   position: relative;
-  --carousel-fade-bg: var(--bg);
 }
 
 .certificate-track {
@@ -511,55 +510,10 @@ h3 {
 
 .research-carousel {
   position: relative;
-  --carousel-fade-bg: var(--bg-alt);
-}
-
-.certification-carousel::after,
-.research-carousel::after {
-  content: "";
-  position: absolute;
-  top: 72px;
-  right: -2px;
-  bottom: 28px;
-  width: 76px;
-  pointer-events: none;
-  background: linear-gradient(90deg, rgba(248, 243, 238, 0), var(--carousel-fade-bg) 82%);
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.certification-carousel.has-overflow:not(.is-at-end)::after,
-.research-carousel.has-overflow:not(.is-at-end)::after {
-  opacity: 1;
-}
-
-.carousel-toolbar {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin: -8px 0 16px;
-}
-
-.carousel-hint {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.92rem;
-}
-
-.carousel-hint::after {
-  content: " ->";
-  color: var(--accent-dark);
-  font-weight: 700;
 }
 
 .carousel-controls {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  flex: 0 0 auto;
+  display: none;
 }
 
 .carousel-button {
@@ -654,6 +608,13 @@ h3 {
 }
 
 @media (min-width: 901px) {
+  .carousel-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin: -8px 0 16px;
+  }
+
   .research-grid,
   .certificate-track {
     display: flex;
@@ -852,14 +813,6 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .research-carousel .carousel-toolbar {
-    display: none;
-  }
-
-  .research-carousel::after {
-    display: none;
-  }
-
   .cta-panel {
     flex-direction: column;
     align-items: flex-start;
@@ -895,21 +848,6 @@ h3 {
 
   .lead {
     font-size: 1rem;
-  }
-
-  .carousel-toolbar {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .carousel-controls {
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .carousel-button {
-    width: 48%;
   }
 
   .nav {

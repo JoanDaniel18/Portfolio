@@ -121,7 +121,6 @@ const translations = {
       description:
         'Cursos y reconocimientos en frontend, Python, IA, datos, ciberseguridad e investigación.',
       carouselControls: 'Controles del carrusel de certificaciones',
-      carouselHint: 'Usa las flechas o desplaza el carrusel para ver más certificados.',
       carouselPrev: 'Ver certificación anterior',
       carouselNext: 'Ver certificación siguiente',
       view: 'Ver certificado',
@@ -215,7 +214,6 @@ const translations = {
         'KIDOCODE VR fue reconocido entre las propuestas destacadas del Top 5, resaltando su enfoque en educación inmersiva, impacto comunitario y tecnología aplicada.',
       kidocodeAwardMeta: 'Yachay Tech • CompuFest 2026',
       carouselControls: 'Controles del carrusel de investigación',
-      carouselHint: 'Usa las flechas o desplaza el carrusel para explorar más elementos.',
       carouselPrev: 'Ver elemento anterior',
       carouselNext: 'Ver elemento siguiente',
       posterAlt: 'Póster científico presentado en el 5th Life Science Congress 2025',
@@ -364,7 +362,6 @@ const translations = {
       description:
         'Courses and recognitions in frontend, Python, AI, data, cybersecurity, and research.',
       carouselControls: 'Certification carousel controls',
-      carouselHint: 'Use the arrows or scroll the carousel to view more certificates.',
       carouselPrev: 'View previous certification',
       carouselNext: 'View next certification',
       view: 'View certificate',
@@ -458,7 +455,6 @@ const translations = {
         'KIDOCODE VR was recognized among the Top 5 highlighted proposals, standing out for immersive education, community impact, and applied technology.',
       kidocodeAwardMeta: 'Yachay Tech • CompuFest 2026',
       carouselControls: 'Research carousel controls',
-      carouselHint: 'Use the arrows or scroll the carousel to explore more items.',
       carouselPrev: 'View previous item',
       carouselNext: 'View next item',
       posterAlt: 'Scientific poster presented at the 5th Life Science Congress 2025',
@@ -637,13 +633,6 @@ document.querySelectorAll('[data-carousel]').forEach((carousel) => {
 
   const updateControls = () => {
     const maxScroll = track.scrollWidth - track.clientWidth;
-    const hasOverflow = maxScroll > 2;
-    const isAtStart = track.scrollLeft <= 2;
-    const isAtEnd = track.scrollLeft >= maxScroll - 2;
-
-    carousel.classList.toggle('has-overflow', hasOverflow);
-    carousel.classList.toggle('is-at-start', isAtStart);
-    carousel.classList.toggle('is-at-end', isAtEnd);
     previousButton.disabled = track.scrollLeft <= 2;
     nextButton.disabled = track.scrollLeft >= maxScroll - 2;
   };
