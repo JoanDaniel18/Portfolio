@@ -1,13 +1,13 @@
 const translations = {
   es: {
     meta: {
-      title: 'Daniel Rivas | Software / Web/VR Developer',
+      title: 'Daniel Rivas | Full Stack Software Developer',
       description:
-        'Portafolio profesional de Daniel Rivas, Software / Web/VR Developer. Plataformas web, realidad virtual educativa, datos e IA aplicada.',
+        'Portafolio profesional de Daniel Rivas, desarrollador full stack e ingeniero en TIC. Aplicaciones web, APIs, datos e IA aplicada.',
       languageLabel: 'Selector de idioma',
     },
     brand: {
-      role: 'Software / Web/VR Developer',
+      role: 'Full Stack Software Developer',
     },
     nav: {
       services: 'Servicios',
@@ -20,10 +20,10 @@ const translations = {
       menuClose: 'Cerrar menú',
     },
     hero: {
-      eyebrow: 'Ingeniería de Software • Web/VR • IA aplicada',
+      eyebrow: 'Ingeniería de Software • Desarrollo Full Stack • IA aplicada',
       title: 'Desarrollo soluciones de software para desafíos reales.',
       lead:
-        'Soy Daniel Rivas, ingeniero en TIC y desarrollador web/VR. Trabajo con Vue.js, Three.js, WebXR, Node.js, PostgreSQL, Firebase y Python para crear plataformas, prototipos educativos e investigación aplicada.',
+        'Soy Daniel Rivas, ingeniero en TIC y desarrollador full stack. Diseño y construyo aplicaciones web, APIs y plataformas empresariales con Java, Spring Boot, React, JavaScript, Node.js, PostgreSQL y Python.',
       email: 'Hablemos',
       work: 'Ver trabajo',
       locationLabel: 'Ubicación',
@@ -257,7 +257,7 @@ const translations = {
       whatsapp: 'Contáctame por WhatsApp',
     },
     footer: {
-      role: 'Software / Web/VR Developer • ICT Engineering',
+      role: 'Full Stack Software Developer • ICT Engineering',
       contact: 'Contacto directo',
       online: 'Presencia online',
       availability: 'Disponible para oportunidades remotas',
@@ -265,13 +265,13 @@ const translations = {
   },
   en: {
     meta: {
-      title: 'Daniel Rivas | Software / Web/VR Developer',
+      title: 'Daniel Rivas | Full Stack Software Developer',
       description:
-        'Professional portfolio of Daniel Rivas, Software / Web/VR Developer. Web platforms, educational VR, data, and applied AI.',
+        'Professional portfolio of Daniel Rivas, a full stack software developer and ICT engineer. Web applications, APIs, data, and applied AI.',
       languageLabel: 'Language selector',
     },
     brand: {
-      role: 'Software / Web/VR Developer',
+      role: 'Full Stack Software Developer',
     },
     nav: {
       services: 'Services',
@@ -284,10 +284,10 @@ const translations = {
       menuClose: 'Close menu',
     },
     hero: {
-      eyebrow: 'Software Engineering • Web/VR • Applied AI',
+      eyebrow: 'Software Engineering • Full Stack Development • Applied AI',
       title: 'I build software solutions for real-world challenges.',
       lead:
-        'I am Daniel Rivas, an ICT engineer and web/VR developer. I work with Vue.js, Three.js, WebXR, Node.js, PostgreSQL, Firebase, and Python to build platforms, educational prototypes, and applied research.',
+        'I am Daniel Rivas, an ICT engineer and full stack developer. I design and build web applications, APIs, and business platforms with Java, Spring Boot, React, JavaScript, Node.js, PostgreSQL, and Python.',
       email: 'Let us talk',
       work: 'View work',
       locationLabel: 'Location',
@@ -521,7 +521,7 @@ const translations = {
       whatsapp: 'Contact me on WhatsApp',
     },
     footer: {
-      role: 'Software / Web/VR Developer • ICT Engineering',
+      role: 'Full Stack Software Developer • ICT Engineering',
       contact: 'Direct contact',
       online: 'Online presence',
       availability: 'Available for remote opportunities',
