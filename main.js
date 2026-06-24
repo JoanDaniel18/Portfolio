@@ -60,16 +60,20 @@ const translations = {
       erpRole: 'Desarrollador Full Stack - ERP y Sitio Web',
       erpDate: 'Mayo 2026 - Actualidad',
       erpTitle: 'Mega Mayorista - ERP y Plataforma Web',
+      erpStack:
+        'Java · Spring Boot · Spring Data JPA · PostgreSQL · React · JavaScript · Tailwind CSS · Docker · Nginx · Git',
       erpPoint1:
-        'Desarrollé endpoints REST en Spring Boot con Spring Data JPA y consultas SQL avanzadas (CTEs y agregaciones) para reportes de ventas, rotación y tendencias.',
+        'Diseñé endpoints REST con Spring Boot, Spring Data JPA/Hibernate y Maven, incorporando paginación, filtros y parámetros para las operaciones del ERP.',
       erpPoint2:
-        'Implementé actualización de stock en tiempo real mediante procesos asíncronos y recursivos en JavaScript vanilla, sin recargar la página.',
+        'Implementé actualización de stock casi en tiempo real con fetch, async/await y polling recursivo con setTimeout, sin recargar la página y con caché en localStorage.',
       erpPoint3:
-        'Containericé el entorno con Docker Compose, orquestando PostgreSQL, backend Spring Boot y Nginx como proxy y servidor de estáticos.',
+        'Modelé PostgreSQL con múltiples esquemas, JOINs, CTEs, agregaciones, triggers, llaves foráneas y restricciones CHECK para reportería de ventas, rotación y tendencias.',
       erpPoint4:
-        'Construí el ERP en React (hooks) y el sitio público con arquitectura de componentes propia, Tailwind CSS, diseño responsive y SPA routing con History API.',
+        'Containericé el entorno con Docker Compose, volúmenes y bind mounts, orquestando PostgreSQL, Spring Boot y Nginx como proxy y servidor de archivos estáticos.',
       erpPoint5:
-        'Integré autenticación con JWT, validación de inputs con expresiones regulares y caché en cliente (localStorage), en el contexto de facturación electrónica SRI (Ecuador).',
+        'Construí el ERP en React con hooks y el sitio público en JavaScript vanilla, Tailwind CSS, diseño responsive y navegación SPA mediante History API.',
+      erpPoint6:
+        'Integré autenticación JWT, validación y saneo con expresiones regulares, búsqueda con sinónimos y flujos de facturación electrónica SRI para Ecuador.',
       vrRole: 'Desarrollador de Juego Educativo en Realidad Virtual',
       vrDate: 'Diciembre 2025 - Mayo 2026',
       vrTitle: 'UEMY Urcuquí - KIDOCODE VR',
@@ -320,16 +324,20 @@ const translations = {
       erpRole: 'Full Stack Developer - ERP and Website',
       erpDate: 'May 2026 - Present',
       erpTitle: 'Mega Mayorista - ERP and Web Platform',
+      erpStack:
+        'Java · Spring Boot · Spring Data JPA · PostgreSQL · React · JavaScript · Tailwind CSS · Docker · Nginx · Git',
       erpPoint1:
-        'Developed REST endpoints in Spring Boot with Spring Data JPA and advanced SQL queries (CTEs and aggregations) for sales, rotation, and trend reports.',
+        'Designed REST endpoints with Spring Boot, Spring Data JPA/Hibernate, and Maven, including pagination, filters, and parameters for ERP operations.',
       erpPoint2:
-        'Implemented real-time stock updates through asynchronous and recursive processes in vanilla JavaScript, without reloading the page.',
+        'Implemented near-real-time stock updates with fetch, async/await, and recursive polling via setTimeout, without page reloads and with localStorage caching.',
       erpPoint3:
-        'Containerized the environment with Docker Compose, orchestrating PostgreSQL, a Spring Boot backend, and Nginx as a proxy and static-file server.',
+        'Modeled PostgreSQL with multiple schemas, JOINs, CTEs, aggregations, triggers, foreign keys, and CHECK constraints for sales, rotation, and trend reporting.',
       erpPoint4:
-        'Built the ERP in React (hooks) and the public site with a custom component architecture, Tailwind CSS, responsive design, and SPA routing via the History API.',
+        'Containerized the environment with Docker Compose, volumes, and bind mounts, orchestrating PostgreSQL, Spring Boot, and Nginx as a proxy and static-file server.',
       erpPoint5:
-        'Integrated JWT authentication, regex-based input validation, and client-side caching (localStorage), within the SRI electronic invoicing context (Ecuador).',
+        'Built the ERP in React with hooks and the public site in vanilla JavaScript, Tailwind CSS, responsive design, and SPA navigation through the History API.',
+      erpPoint6:
+        'Integrated JWT authentication, regex-based validation and sanitization, synonym-aware search, and SRI electronic invoicing workflows for Ecuador.',
       vrRole: 'Educational Virtual Reality Game Developer',
       vrDate: 'December 2025 - May 2026',
       vrTitle: 'UEMY Urcuquí - KIDOCODE VR',

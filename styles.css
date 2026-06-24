@@ -473,6 +473,14 @@ h3 {
   line-height: 1.6;
 }
 
+.experience-stack {
+  margin: 12px 0 18px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.82rem;
+  line-height: 1.7;
+  color: var(--accent-dark);
+}
+
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
