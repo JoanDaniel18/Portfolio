@@ -77,6 +77,7 @@ const translations = {
       vrRole: 'Desarrollador de Juego Educativo en Realidad Virtual',
       vrDate: 'Diciembre 2025 - Mayo 2026',
       vrTitle: 'UEMY Urcuquí - KIDOCODE VR',
+      vrStack: 'Three.js · WebXR · JavaScript · Firebase · Meta Quest 3S',
       vrPoint1:
         'Diseñé e implementé un prototipo VR educativo para practicar pensamiento computacional mediante retos de lógica, secuenciación y resolución de problemas.',
       vrPoint2:
@@ -88,6 +89,7 @@ const translations = {
       hrRole: 'Desarrollador Web - Plataforma de Recursos Humanos',
       hrDate: 'Enero 2025 - Octubre 2025',
       hrTitle: 'Aplicación Web de Recursos Humanos',
+      hrStack: 'Vue.js · Node.js · PostgreSQL · PostgREST · REST APIs · Replit',
       hrPoint1:
         'Desarrollé una plataforma web de recursos humanos con frontend en Vue.js y servicios backend en Node.js.',
       hrPoint2:
@@ -101,6 +103,7 @@ const translations = {
       bioRole: 'Investigador en Análisis de Imágenes Biomédicas',
       bioDate: 'Enero 2024 - Diciembre 2024',
       bioTitle: 'Hospital de Ibarra',
+      bioStack: 'Python · EfficientNet · Deep Learning · Segmentación de imágenes · Análisis de datos',
       bioPoint1:
         'Contribuí a investigación en análisis de imágenes biomédicas usando Python y herramientas nativas para creación de máscaras.',
       bioPoint2:
@@ -341,6 +344,7 @@ const translations = {
       vrRole: 'Educational Virtual Reality Game Developer',
       vrDate: 'December 2025 - May 2026',
       vrTitle: 'UEMY Urcuquí - KIDOCODE VR',
+      vrStack: 'Three.js · WebXR · JavaScript · Firebase · Meta Quest 3S',
       vrPoint1:
         'Designed and implemented an educational VR prototype for practicing computational thinking through logic, sequencing, and problem-solving challenges.',
       vrPoint2:
@@ -352,6 +356,7 @@ const translations = {
       hrRole: 'Web Developer - Human Resources Platform',
       hrDate: 'January 2025 - October 2025',
       hrTitle: 'Human Resources Web Application',
+      hrStack: 'Vue.js · Node.js · PostgreSQL · PostgREST · REST APIs · Replit',
       hrPoint1:
         'Developed a human resources web platform with a Vue.js frontend and Node.js backend services.',
       hrPoint2:
@@ -365,6 +370,7 @@ const translations = {
       bioRole: 'Biomedical Image Analysis Researcher',
       bioDate: 'January 2024 - December 2024',
       bioTitle: 'Hospital de Ibarra',
+      bioStack: 'Python · EfficientNet · Deep Learning · Image Segmentation · Data Analysis',
       bioPoint1:
         'Contributed to biomedical image-analysis research using Python and native tools for mask creation.',
       bioPoint2:
