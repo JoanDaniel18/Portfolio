@@ -57,6 +57,19 @@ const translations = {
     experience: {
       eyebrow: 'Experiencia',
       title: 'Experiencia reciente creando software útil en educación, operaciones e investigación.',
+      erpRole: 'Desarrollador Full Stack - ERP y Sitio Web',
+      erpDate: 'Mayo 2026 - Actualidad',
+      erpTitle: 'Mega Mayorista - ERP y Plataforma Web',
+      erpPoint1:
+        'Desarrollé endpoints REST en Spring Boot con Spring Data JPA y consultas SQL avanzadas (CTEs y agregaciones) para reportes de ventas, rotación y tendencias.',
+      erpPoint2:
+        'Implementé actualización de stock en tiempo real mediante procesos asíncronos y recursivos en JavaScript vanilla, sin recargar la página.',
+      erpPoint3:
+        'Containericé el entorno con Docker Compose, orquestando PostgreSQL, backend Spring Boot y Nginx como proxy y servidor de estáticos.',
+      erpPoint4:
+        'Construí el ERP en React (hooks) y el sitio público con arquitectura de componentes propia, Tailwind CSS, diseño responsive y SPA routing con History API.',
+      erpPoint5:
+        'Integré autenticación con JWT, validación de inputs con expresiones regulares y caché en cliente (localStorage), en el contexto de facturación electrónica SRI (Ecuador).',
       vrRole: 'Desarrollador de Juego Educativo en Realidad Virtual',
       vrDate: 'Diciembre 2025 - Mayo 2026',
       vrTitle: 'UEMY Urcuquí - KIDOCODE VR',
@@ -304,6 +317,19 @@ const translations = {
     experience: {
       eyebrow: 'Experience',
       title: 'Recent experience building useful software for education, operations, and research.',
+      erpRole: 'Full Stack Developer - ERP and Website',
+      erpDate: 'May 2026 - Present',
+      erpTitle: 'Mega Mayorista - ERP and Web Platform',
+      erpPoint1:
+        'Developed REST endpoints in Spring Boot with Spring Data JPA and advanced SQL queries (CTEs and aggregations) for sales, rotation, and trend reports.',
+      erpPoint2:
+        'Implemented real-time stock updates through asynchronous and recursive processes in vanilla JavaScript, without reloading the page.',
+      erpPoint3:
+        'Containerized the environment with Docker Compose, orchestrating PostgreSQL, a Spring Boot backend, and Nginx as a proxy and static-file server.',
+      erpPoint4:
+        'Built the ERP in React (hooks) and the public site with a custom component architecture, Tailwind CSS, responsive design, and SPA routing via the History API.',
+      erpPoint5:
+        'Integrated JWT authentication, regex-based input validation, and client-side caching (localStorage), within the SRI electronic invoicing context (Ecuador).',
       vrRole: 'Educational Virtual Reality Game Developer',
       vrDate: 'December 2025 - May 2026',
       vrTitle: 'UEMY Urcuquí - KIDOCODE VR',
