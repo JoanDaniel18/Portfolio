@@ -21,7 +21,7 @@ const translations = {
     },
     hero: {
       eyebrow: 'Ingeniería de Software • Web/VR • IA aplicada',
-      title: 'Creo software web y VR para problemas reales.',
+      title: 'Desarrollo soluciones de software para desafíos reales.',
       lead:
         'Soy Daniel Rivas, ingeniero en TIC y desarrollador web/VR. Trabajo con Vue.js, Three.js, WebXR, Node.js, PostgreSQL, Firebase y Python para crear plataformas, prototipos educativos e investigación aplicada.',
       email: 'Hablemos',
@@ -285,7 +285,7 @@ const translations = {
     },
     hero: {
       eyebrow: 'Software Engineering • Web/VR • Applied AI',
-      title: 'I build web and VR software for real-world problems.',
+      title: 'I build software solutions for real-world challenges.',
       lead:
         'I am Daniel Rivas, an ICT engineer and web/VR developer. I work with Vue.js, Three.js, WebXR, Node.js, PostgreSQL, Firebase, and Python to build platforms, educational prototypes, and applied research.',
       email: 'Let us talk',
