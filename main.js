@@ -677,3 +677,41 @@ const observer = new IntersectionObserver(
 );
 
 reveals.forEach((el) => observer.observe(el));
+
+// Scroll-spy: resalta en el menú la sección visible actualmente
+const spyLinks = Array.from(navLinks).filter((link) =>
+  link.getAttribute('href')?.startsWith('#')
+);
+
+const spyTargets = spyLinks
+  .map((link) => {
+    const target = document.querySelector(link.getAttribute('href'));
+    return target ? { link, target } : null;
+  })
+  .filter(Boolean);
+
+if (spyTargets.length) {
+  const setCurrent = (activeLink) => {
+    spyLinks.forEach((link) => {
+      link.classList.toggle('is-current', link === activeLink);
+    });
+  };
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible) {
+        const match = spyTargets.find((item) => item.target === visible.target);
+        if (match) {
+          setCurrent(match.link);
+        }
+      }
+    },
+    { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+  );
+
+  spyTargets.forEach((item) => sectionObserver.observe(item.target));
+}

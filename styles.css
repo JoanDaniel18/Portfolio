@@ -719,6 +719,170 @@ h3 {
   transform: translateY(0);
 }
 
+/* ============================================================
+   UX enhancements — interacción, foco y microafordancias
+   (no altera contenido; solo refuerza la experiencia)
+   ============================================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Foco visible accesible y consistente para teclado */
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Tarjetas: feedback de hover con elevación y acento */
+.card,
+.project-card,
+.timeline-item,
+.certificate-card,
+.research-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease,
+    opacity 0.45s ease;
+}
+
+.card:hover,
+.project-card:hover,
+.timeline-item:hover {
+  transform: translateY(-6px);
+  border-color: rgba(194, 84, 43, 0.4);
+  box-shadow: 0 26px 54px rgba(26, 27, 31, 0.14);
+}
+
+.certificate-card:hover,
+.research-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(194, 84, 43, 0.4);
+  box-shadow: 0 26px 54px rgba(26, 27, 31, 0.16);
+}
+
+/* Zoom sutil de la imagen dentro de tarjetas con foto */
+.certificate-card,
+.research-card {
+  position: relative;
+}
+
+.certificate-card img,
+.research-card img {
+  transition: transform 0.5s ease;
+}
+
+.certificate-card:hover img,
+.research-card:hover img {
+  transform: scale(1.04);
+}
+
+/* Barra de acento que aparece arriba de la tarjeta de servicio */
+.card {
+  position: relative;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 3px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+
+.card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Enlaces de texto: flecha animada como afordancia */
+.link::after {
+  content: "\2192";
+  margin-left: 6px;
+  transition: transform 0.25s ease;
+}
+
+.link:hover::after {
+  transform: translateX(4px);
+}
+
+.link:hover {
+  color: var(--accent);
+}
+
+/* Navegación: subrayado animado y estado de sección activa */
+.nav-links a:not(.btn) {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:not(.btn)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+}
+
+.nav-links a:not(.btn):hover {
+  color: var(--accent-dark);
+}
+
+.nav-links a:not(.btn):hover::after,
+.nav-links a.is-current:not(.btn)::after {
+  transform: scaleX(1);
+}
+
+.nav-links a.is-current:not(.btn) {
+  color: var(--accent-dark);
+}
+
+/* Botones: estado activo al pulsar */
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Tarjeta del hero: leve elevación al pasar el cursor */
+.hero-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 32px 70px rgba(20, 20, 20, 0.16);
+}
+
+/* Respeto a usuarios que prefieren menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (max-width: 900px) {
   .site-header {
     background: rgba(248, 243, 238, 0.96);
