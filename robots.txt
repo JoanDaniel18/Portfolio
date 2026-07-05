@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://joandaniel18.github.io/Portfolio/sitemap.xml
