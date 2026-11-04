@@ -60,17 +60,17 @@ const translations = {
       chTitle: 'Cell House Importación S.A.S',
       chStack: 'Next.js · React · TypeScript · Prisma ORM · PostgreSQL · Tailwind CSS · Zod · Vitest · Docker',
       chPoint1:
-        'Desarrollo el software interno de una importadora de celulares y accesorios con locales en Ecuador y Colombia: dos plataformas web que comparten servidor y dominio, con bases de datos, sesiones y contenedores aislados.',
+        'Lidero el desarrollo del ecosistema de software interno de una importadora de tecnología con operaciones en Ecuador y Colombia, integrado por dos aplicaciones web desplegadas sobre infraestructura compartida, con bases de datos, sesiones y contenedores independientes.',
       chPoint2:
-        'Entregué un control de asistencia por QR: códigos dinámicos con tokens rotativos (hash SHA-256 y cifrado), QR fijos de almuerzo por local y cálculo de puntualidad 100% en el servidor, sin app, huella ni GPS.',
+        'Diseñé e implementé un sistema de control de asistencia basado en códigos QR dinámicos, con tokens rotativos protegidos mediante hash SHA-256 y cifrado, registro de pausas por establecimiento y validación de horarios exclusivamente del lado del servidor, sin requerir hardware biométrico ni aplicaciones móviles.',
       chPoint3:
-        'Construyo un ERP modular con 11 módulos (ventas, inventario por IMEI, envíos entre locales, bodegas, clientes, precios) y permisos por usuario, módulo y local, sobre 24 modelos y 50 migraciones con Prisma.',
+        'Desarrollo un ERP modular de 11 módulos (ventas, inventario por IMEI, transferencias entre sucursales, gestión de bodegas, clientes y precios) con control de acceso granular por usuario, módulo y sucursal, respaldado por un modelo de datos de 24 entidades y 50 migraciones versionadas con Prisma.',
       chPoint4:
-        'Diseñé análisis de ventas para decidir: utilidad por local, pago mixto con recargo de tarjeta, capital inmovilizado en stock y alertas de precios sospechosos.',
+        'Implementé analítica comercial orientada a la toma de decisiones: rentabilidad por sucursal, conciliación de pagos mixtos y recargos por tarjeta, valoración del capital inmovilizado en inventario y detección de precios atípicos.',
       chPoint5:
-        'Creé un mapa 3D interactivo de la bodega que gira hasta la pared donde está el producto buscado, y un catálogo público para que los clientes pidan por WhatsApp.',
+        'Desarrollé una visualización 3D interactiva de la bodega que orienta la vista hacia la ubicación física del producto consultado, junto con un catálogo público integrado con WhatsApp para la gestión de pedidos.',
       chPoint6:
-        'Aseguro la calidad con TypeScript estricto, validación con Zod y 27 suites de pruebas en Vitest sobre las reglas de negocio críticas.',
+        'Garantizo la calidad del software mediante TypeScript en modo estricto, validación de esquemas con Zod y 27 suites de pruebas automatizadas en Vitest sobre la lógica de negocio crítica.',
       erpRole: 'Desarrollador Full Stack - ERP y Sitio Web',
       erpDate: 'Mayo 2026 - Junio 2026 · 2 meses',
       erpTitle: 'Mega Mayorista - ERP y Plataforma Web',
@@ -378,17 +378,17 @@ const translations = {
       chTitle: 'Cell House Importación S.A.S',
       chStack: 'Next.js · React · TypeScript · Prisma ORM · PostgreSQL · Tailwind CSS · Zod · Vitest · Docker',
       chPoint1:
-        'I build the internal software of a phone and accessories importer with stores in Ecuador and Colombia: two web platforms sharing one server and domain, with isolated databases, sessions, and containers.',
+        'Lead the development of the internal software ecosystem for a technology importer operating in Ecuador and Colombia, comprising two web applications deployed on shared infrastructure with independent databases, sessions, and containers.',
       chPoint2:
-        'Delivered a QR attendance system: dynamic codes with rotating tokens (SHA-256 hashing and encryption), fixed per-store lunch QR codes, and fully server-side punctuality rules, with no app, fingerprint, or GPS required.',
+        'Designed and implemented a dynamic QR-based attendance system with rotating tokens secured through SHA-256 hashing and encryption, per-location break tracking, and strictly server-side schedule validation, with no biometric hardware or mobile apps required.',
       chPoint3:
-        'Building a modular ERP with 11 modules (sales, IMEI-level inventory, inter-store shipments, warehouses, clients, pricing) and per-user, per-module, per-store permissions, on 24 models and 50 Prisma migrations.',
+        'Develop a modular ERP with 11 modules (sales, IMEI-level inventory, inter-branch transfers, warehouse management, clients, and pricing) featuring granular access control by user, module, and branch, backed by a 24-entity data model and 50 versioned Prisma migrations.',
       chPoint4:
-        'Designed decision-oriented sales analytics: profit per store, split payments with card surcharge, capital tied up in stock, and suspicious-price alerts.',
+        'Implemented decision-oriented business analytics: profitability by branch, reconciliation of split payments and card surcharges, valuation of capital tied up in inventory, and detection of anomalous prices.',
       chPoint5:
-        'Created an interactive 3D warehouse map that rotates to the wall holding the searched product, plus a public catalog where customers order via WhatsApp.',
+        'Built an interactive 3D warehouse visualization that orients the view toward the physical location of the queried product, along with a public catalog integrated with WhatsApp for order management.',
       chPoint6:
-        'Ensure quality with strict TypeScript, Zod validation, and 27 Vitest suites covering critical business rules.',
+        'Ensure software quality through strict-mode TypeScript, Zod schema validation, and 27 automated Vitest test suites covering critical business logic.',
       erpRole: 'Full Stack Developer - ERP and Website',
       erpDate: 'May 2026 - June 2026 · 2 months',
       erpTitle: 'Mega Mayorista - ERP and Web Platform',
