@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20260629-1" />
+  <link rel="stylesheet" href="styles.css?v=20261104-2" />
 </head>
 <body>
   <div class="bg-noise" aria-hidden="true"></div>
@@ -84,10 +84,6 @@
         </div>
         <div class="hero-card">
           <div class="portrait" role="img" aria-label="Fotografía profesional de Daniel Rivas" data-i18n-aria-label="hero.portraitAlt">
-            <div class="portrait-overlay">
-              <span data-i18n="hero.portraitTitle">Fotografía profesional</span>
-              <small data-i18n="hero.portraitSmall">Disponible a solicitud</small>
-            </div>
           </div>
           <div class="hero-card-body">
             <p class="mono" data-i18n="hero.specialist">Especialista en</p>
@@ -153,8 +149,24 @@
         <div class="timeline">
           <div class="timeline-item reveal">
             <div class="timeline-meta">
+              <span class="timeline-role" data-i18n="experience.chRole">Desarrollador Full Stack</span>
+              <span class="timeline-date" data-i18n="experience.chDate">Agosto 2026 - Actualidad</span>
+            </div>
+            <h3 data-i18n="experience.chTitle">Cell House Importación S.A.S</h3>
+            <p class="experience-stack" data-i18n="experience.chStack">Next.js · React · TypeScript · Prisma ORM · PostgreSQL · Tailwind CSS · Zod · Vitest · Docker</p>
+            <ul class="timeline-list">
+              <li data-i18n="experience.chPoint1">Desarrollo el software interno de una importadora de celulares y accesorios con locales en Ecuador y Colombia: dos plataformas web que comparten servidor y dominio, con bases de datos, sesiones y contenedores aislados.</li>
+              <li data-i18n="experience.chPoint2">Entregué un control de asistencia por QR: códigos dinámicos con tokens rotativos (hash SHA-256 y cifrado), QR fijos de almuerzo por local y cálculo de puntualidad 100% en el servidor, sin app, huella ni GPS.</li>
+              <li data-i18n="experience.chPoint3">Construyo un ERP modular con 11 módulos (ventas, inventario por IMEI, envíos entre locales, bodegas, clientes, precios) y permisos por usuario, módulo y local, sobre 24 modelos y 50 migraciones con Prisma.</li>
+              <li data-i18n="experience.chPoint4">Diseñé análisis de ventas para decidir: utilidad por local, pago mixto con recargo de tarjeta, capital inmovilizado en stock y alertas de precios sospechosos.</li>
+              <li data-i18n="experience.chPoint5">Creé un mapa 3D interactivo de la bodega que gira hasta la pared donde está el producto buscado, y un catálogo público para que los clientes pidan por WhatsApp.</li>
+              <li data-i18n="experience.chPoint6">Aseguro la calidad con TypeScript estricto, validación con Zod y 27 suites de pruebas en Vitest sobre las reglas de negocio críticas.</li>
+            </ul>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-meta">
               <span class="timeline-role" data-i18n="experience.erpRole">Desarrollador Full Stack - ERP y Sitio Web</span>
-              <span class="timeline-date" data-i18n="experience.erpDate">Mayo 2026 - Actualidad</span>
+              <span class="timeline-date" data-i18n="experience.erpDate">Mayo 2026 - Junio 2026 · 2 meses</span>
             </div>
             <h3 data-i18n="experience.erpTitle">Mega Mayorista - ERP y Plataforma Web</h3>
             <p class="experience-stack" data-i18n="experience.erpStack">Java · Spring Boot · Spring Data JPA · PostgreSQL · React · JavaScript · Tailwind CSS · Docker · Nginx · Git</p>
@@ -219,9 +231,27 @@
         <div class="section-header">
           <p class="eyebrow" data-i18n="projects.eyebrow">Proyectos</p>
           <h2 data-i18n="projects.title">Proyectos que muestran cómo pienso, construyo y valido soluciones.</h2>
-          <p data-i18n="projects.description">Una selección breve de trabajos que combinan producto web, VR, datos e investigación aplicada.</p>
+          <p data-i18n="projects.description">Una selección breve de trabajos que combinan sistemas empresariales, producto web, VR, datos e investigación aplicada.</p>
         </div>
         <div class="project-grid">
+          <article class="project-card project-card--featured reveal">
+            <div class="project-header">
+              <span class="status-badge status-badge--live" data-i18n="projects.statusLive">En desarrollo</span>
+              <h3 data-i18n="projects.chTitle">Plataforma Cell House</h3>
+              <span class="mono">Next.js • TypeScript • Prisma • PostgreSQL</span>
+            </div>
+            <p data-i18n="projects.chText">ERP interno modular: ventas con pago mixto, inventario por IMEI con envíos y firma de entrega, mapa 3D de la bodega, catálogo de siliconas con fotos marcables y buscador de micas compatibles entre modelos.</p>
+            <a class="link" href="#experiencia" data-i18n="projects.chLink">Ver experiencia en Cell House</a>
+          </article>
+          <article class="project-card project-card--featured reveal">
+            <div class="project-header">
+              <span class="status-badge status-badge--done" data-i18n="projects.statusDone">Completado</span>
+              <h3 data-i18n="projects.qrTitle">Control de Asistencia QR</h3>
+              <span class="mono">Next.js • Prisma • PostgreSQL • Docker</span>
+            </div>
+            <p data-i18n="projects.qrText">Asistencia y almuerzos para locales en Ecuador y Colombia: el empleado escanea un QR y marca desde su celular. Roles con superadministrador, alcance por país, reportes por periodo y exportación CSV.</p>
+            <a class="link" href="#experiencia" data-i18n="projects.qrLink">Ver experiencia en Cell House</a>
+          </article>
           <article class="project-card reveal">
             <div class="project-header">
               <h3 data-i18n="projects.kidocodeTitle">KIDOCODE VR</h3>
@@ -269,7 +299,7 @@
             <div class="certificate-track" data-carousel-track tabindex="0">
               <!-- Keep English proficiency first: high-signal credential for IT employers, regardless of date. -->
               <article class="certificate-card reveal" data-carousel-card data-certificate-priority="primary">
-                <img src="assets/certificates/previews/english-language-proficiency-b2-yachay-tech.jpg" alt="Certificado de suficiencia en inglés B2 de Yachay Tech" data-i18n-alt="certifications.englishProficiencyAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/english-language-proficiency-b2-yachay-tech.jpg" alt="Certificado de suficiencia en inglés B2 de Yachay Tech" data-i18n-alt="certifications.englishProficiencyAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.englishProficiencyIssuer">Yachay Tech Language Center • 2026</span>
                   <h3 data-i18n="certifications.englishProficiencyTitle">English Language Proficiency B2</h3>
@@ -277,7 +307,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/data-visualization-in-power-bi.jpg" alt="Certificado de Data Visualization in Power BI de DataCamp" data-i18n-alt="certifications.dataVisualizationPowerBiAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/data-visualization-in-power-bi.jpg" alt="Certificado de Data Visualization in Power BI de DataCamp" data-i18n-alt="certifications.dataVisualizationPowerBiAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.dataVisualizationPowerBiIssuer">DataCamp • 2026</span>
                   <h3 data-i18n="certifications.dataVisualizationPowerBiTitle">Data Visualization in Power BI</h3>
@@ -285,7 +315,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/data-preparation-in-power-bi.jpg" alt="Certificado de Data Preparation in Power BI de DataCamp" data-i18n-alt="certifications.dataPreparationPowerBiAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/data-preparation-in-power-bi.jpg" alt="Certificado de Data Preparation in Power BI de DataCamp" data-i18n-alt="certifications.dataPreparationPowerBiAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.dataPreparationPowerBiIssuer">DataCamp • 2026</span>
                   <h3 data-i18n="certifications.dataPreparationPowerBiTitle">Data Preparation in Power BI</h3>
@@ -293,7 +323,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/data-connections-in-power-bi.jpg" alt="Certificado de Data Connections in Power BI de DataCamp" data-i18n-alt="certifications.dataConnectionsPowerBiAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/data-connections-in-power-bi.jpg" alt="Certificado de Data Connections in Power BI de DataCamp" data-i18n-alt="certifications.dataConnectionsPowerBiAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.dataConnectionsPowerBiIssuer">DataCamp • 2026</span>
                   <h3 data-i18n="certifications.dataConnectionsPowerBiTitle">Data Connections in Power BI</h3>
@@ -301,7 +331,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/power-bi-for-end-users.jpg" alt="Certificado de Power BI for End Users de DataCamp" data-i18n-alt="certifications.powerBiAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/power-bi-for-end-users.jpg" alt="Certificado de Power BI for End Users de DataCamp" data-i18n-alt="certifications.powerBiAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.powerBiIssuer">DataCamp • 2026</span>
                   <h3 data-i18n="certifications.powerBiTitle">Power BI for End Users</h3>
@@ -309,7 +339,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/azure-fundamentals.jpg" alt="Certificado de Azure Fundamentals de Simplilearn SkillUp" data-i18n-alt="certifications.azureFundamentalsAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/azure-fundamentals.jpg" alt="Certificado de Azure Fundamentals de Simplilearn SkillUp" data-i18n-alt="certifications.azureFundamentalsAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.azureFundamentalsIssuer">Simplilearn SkillUp • 2026</span>
                   <h3 data-i18n="certifications.azureFundamentalsTitle">Azure Fundamentals</h3>
@@ -317,7 +347,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/agile-scrum-master.jpg" alt="Certificado de Agile Scrum Master de Simplilearn SkillUp" data-i18n-alt="certifications.agileScrumAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/agile-scrum-master.jpg" alt="Certificado de Agile Scrum Master de Simplilearn SkillUp" data-i18n-alt="certifications.agileScrumAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.agileScrumIssuer">Simplilearn SkillUp • 2026</span>
                   <h3 data-i18n="certifications.agileScrumTitle">Agile Scrum Master</h3>
@@ -325,7 +355,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/introduction-to-jira.jpg" alt="Certificado de Introduction to JIRA de Simplilearn SkillUp" data-i18n-alt="certifications.jiraAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/introduction-to-jira.jpg" alt="Certificado de Introduction to JIRA de Simplilearn SkillUp" data-i18n-alt="certifications.jiraAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.jiraIssuer">Simplilearn SkillUp • 2026</span>
                   <h3 data-i18n="certifications.jiraTitle">Introduction to JIRA</h3>
@@ -333,7 +363,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/introduction-to-itil-v4.jpg" alt="Certificado de Introduction to ITIL V4 de Simplilearn SkillUp" data-i18n-alt="certifications.itilAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/introduction-to-itil-v4.jpg" alt="Certificado de Introduction to ITIL V4 de Simplilearn SkillUp" data-i18n-alt="certifications.itilAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.itilIssuer">Simplilearn SkillUp • 2026</span>
                   <h3 data-i18n="certifications.itilTitle">Introduction to ITIL V4</h3>
@@ -341,7 +371,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/microsoft-ai.jpg" alt="Certificado Microsoft de introducción a inteligencia artificial" data-i18n-alt="certifications.microsoftAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/microsoft-ai.jpg" alt="Certificado Microsoft de introducción a inteligencia artificial" data-i18n-alt="certifications.microsoftAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.microsoftIssuer">Microsoft • 2025</span>
                   <h3 data-i18n="certifications.microsoftTitle">Introducción a los conceptos de inteligencia artificial</h3>
@@ -349,7 +379,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/supervised-learning-scikit-learn.jpg" alt="Certificado de Supervised Learning with scikit-learn" data-i18n-alt="certifications.scikitAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/supervised-learning-scikit-learn.jpg" alt="Certificado de Supervised Learning with scikit-learn" data-i18n-alt="certifications.scikitAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.scikitIssuer">DataCamp • 2024</span>
                   <h3 data-i18n="certifications.scikitTitle">Supervised Learning with scikit-learn</h3>
@@ -357,7 +387,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/monetizing-ai.jpg" alt="Certificado de Monetizing Artificial Intelligence" data-i18n-alt="certifications.monetizingAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/monetizing-ai.jpg" alt="Certificado de Monetizing Artificial Intelligence" data-i18n-alt="certifications.monetizingAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.monetizingIssuer">DataCamp • 2024</span>
                   <h3 data-i18n="certifications.monetizingTitle">Monetizing Artificial Intelligence</h3>
@@ -365,7 +395,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/introduction-to-azure.jpg" alt="Certificado de Introduction to Azure" data-i18n-alt="certifications.azureAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/introduction-to-azure.jpg" alt="Certificado de Introduction to Azure" data-i18n-alt="certifications.azureAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.azureIssuer">DataCamp • 2026</span>
                   <h3 data-i18n="certifications.azureTitle">Introduction to Azure</h3>
@@ -373,7 +403,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/angular-course.jpg" alt="Certificado del curso de Angular" data-i18n-alt="certifications.angularAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/angular-course.jpg" alt="Certificado del curso de Angular" data-i18n-alt="certifications.angularAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.angularIssuer">Sololearn • 2025</span>
                   <h3 data-i18n="certifications.angularTitle">Angular</h3>
@@ -381,7 +411,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/coding-for-data.jpg" alt="Certificado de Coding for Data" data-i18n-alt="certifications.codingDataAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/coding-for-data.jpg" alt="Certificado de Coding for Data" data-i18n-alt="certifications.codingDataAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.codingDataIssuer">Sololearn • 2025</span>
                   <h3 data-i18n="certifications.codingDataTitle">Coding for Data</h3>
@@ -389,7 +419,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/introduction-to-csharp-sololearn.jpg" alt="Certificado de Introduction to C# de Sololearn" data-i18n-alt="certifications.csharpAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/introduction-to-csharp-sololearn.jpg" alt="Certificado de Introduction to C# de Sololearn" data-i18n-alt="certifications.csharpAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.csharpIssuer">Sololearn • 2025</span>
                   <h3 data-i18n="certifications.csharpTitle">Introduction to C#</h3>
@@ -397,7 +427,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/crash-course-python.jpg" alt="Certificado de Crash Course on Python" data-i18n-alt="certifications.pythonAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/crash-course-python.jpg" alt="Certificado de Crash Course on Python" data-i18n-alt="certifications.pythonAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.pythonIssuer">Google / Coursera • 2020</span>
                   <h3 data-i18n="certifications.pythonTitle">Crash Course on Python</h3>
@@ -405,7 +435,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/css-sololearn.jpg" alt="Certificado de CSS" data-i18n-alt="certifications.cssAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/css-sololearn.jpg" alt="Certificado de CSS" data-i18n-alt="certifications.cssAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.cssIssuer">Sololearn • 2021</span>
                   <h3 data-i18n="certifications.cssTitle">CSS</h3>
@@ -413,7 +443,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/cybersecurity.jpg" alt="Certificado de ciberseguridad" data-i18n-alt="certifications.cyberAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/cybersecurity.jpg" alt="Certificado de ciberseguridad" data-i18n-alt="certifications.cyberAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.cyberIssuer">Certificación • 2025</span>
                   <h3 data-i18n="certifications.cyberTitle">Ciberseguridad</h3>
@@ -421,7 +451,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/life-science-congress.jpg" alt="Certificado de participación en Life Science Congress" data-i18n-alt="certifications.lifeScienceAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/life-science-congress.jpg" alt="Certificado de participación en Life Science Congress" data-i18n-alt="certifications.lifeScienceAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.lifeScienceIssuer">Yachay Tech • 2025</span>
                   <h3 data-i18n="certifications.lifeScienceTitle">3rd Life Science Congress</h3>
@@ -429,7 +459,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/edulytics-hult-prize.jpg" alt="Certificado de participación en Hult Prize OnCampus" data-i18n-alt="certifications.edulyticsAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/edulytics-hult-prize.jpg" alt="Certificado de participación en Hult Prize OnCampus" data-i18n-alt="certifications.edulyticsAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.edulyticsIssuer">Hult Prize • 2025</span>
                   <h3 data-i18n="certifications.edulyticsTitle">OnCampus Program Competitor</h3>
@@ -437,7 +467,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/deep-learning-pytorch.jpg" alt="Certificado de Introduction to Deep Learning with PyTorch" data-i18n-alt="certifications.pytorchAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/deep-learning-pytorch.jpg" alt="Certificado de Introduction to Deep Learning with PyTorch" data-i18n-alt="certifications.pytorchAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.pytorchIssuer">DataCamp • 2026</span>
                   <h3 data-i18n="certifications.pytorchTitle">Introduction to Deep Learning with PyTorch</h3>
@@ -445,7 +475,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/react-redux-course.jpg" alt="Certificado del curso React + Redux" data-i18n-alt="certifications.reactAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/react-redux-course.jpg" alt="Certificado del curso React + Redux" data-i18n-alt="certifications.reactAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.reactIssuer">Sololearn • 2025</span>
                   <h3 data-i18n="certifications.reactTitle">React + Redux</h3>
@@ -453,7 +483,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/nasa-space-apps.jpg" alt="Certificado NASA Space Apps Challenge" data-i18n-alt="certifications.nasaAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/nasa-space-apps.jpg" alt="Certificado NASA Space Apps Challenge" data-i18n-alt="certifications.nasaAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.nasaIssuer">NASA Space Apps • 2025</span>
                   <h3 data-i18n="certifications.nasaTitle">Galactic Problem Solver</h3>
@@ -461,7 +491,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/ieee-student-member.jpg" alt="Certificado de membresía estudiantil IEEE" data-i18n-alt="certifications.ieeeAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/ieee-student-member.jpg" alt="Certificado de membresía estudiantil IEEE" data-i18n-alt="certifications.ieeeAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.ieeeIssuer">IEEE • 2025</span>
                   <h3 data-i18n="certifications.ieeeTitle">Student Member</h3>
@@ -469,7 +499,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/introduction-virtual-reality.jpg" alt="Certificado de Introduction to Virtual Reality" data-i18n-alt="certifications.vrAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/introduction-virtual-reality.jpg" alt="Certificado de Introduction to Virtual Reality" data-i18n-alt="certifications.vrAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.vrIssuer">University of London / Coursera • 2020</span>
                   <h3 data-i18n="certifications.vrTitle">Introduction to Virtual Reality</h3>
@@ -477,7 +507,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/introduction-machine-learning.jpg" alt="Certificado de Introduction to Machine Learning" data-i18n-alt="certifications.machineLearningAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/introduction-machine-learning.jpg" alt="Certificado de Introduction to Machine Learning" data-i18n-alt="certifications.machineLearningAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.machineLearningIssuer">Duke / Coursera • 2020</span>
                   <h3 data-i18n="certifications.machineLearningTitle">Introduction to Machine Learning</h3>
@@ -485,7 +515,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/introduction-big-data.jpg" alt="Certificado de Introduction to Big Data" data-i18n-alt="certifications.bigDataAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/introduction-big-data.jpg" alt="Certificado de Introduction to Big Data" data-i18n-alt="certifications.bigDataAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.bigDataIssuer">UC San Diego / Coursera • 2020</span>
                   <h3 data-i18n="certifications.bigDataTitle">Introduction to Big Data</h3>
@@ -493,7 +523,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/programming-for-everybody-python.jpg" alt="Certificado de Programming for Everybody" data-i18n-alt="certifications.programmingAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/programming-for-everybody-python.jpg" alt="Certificado de Programming for Everybody" data-i18n-alt="certifications.programmingAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.programmingIssuer">University of Michigan / Coursera • 2020</span>
                   <h3 data-i18n="certifications.programmingTitle">Programming for Everybody</h3>
@@ -501,7 +531,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/responsive-website-basics.jpg" alt="Certificado de Responsive Website Basics" data-i18n-alt="certifications.responsiveAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/responsive-website-basics.jpg" alt="Certificado de Responsive Website Basics" data-i18n-alt="certifications.responsiveAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.responsiveIssuer">University of London / Coursera • 2020</span>
                   <h3 data-i18n="certifications.responsiveTitle">Responsive Website Basics</h3>
@@ -509,7 +539,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/excel-skills-business.jpg" alt="Certificado de Excel Skills for Business" data-i18n-alt="certifications.excelAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/excel-skills-business.jpg" alt="Certificado de Excel Skills for Business" data-i18n-alt="certifications.excelAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.excelIssuer">Macquarie / Coursera • 2020</span>
                   <h3 data-i18n="certifications.excelTitle">Excel Skills for Business</h3>
@@ -517,7 +547,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/html-sololearn.jpg" alt="Certificado de HTML" data-i18n-alt="certifications.htmlAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/html-sololearn.jpg" alt="Certificado de HTML" data-i18n-alt="certifications.htmlAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.htmlIssuer">Sololearn • 2021</span>
                   <h3 data-i18n="certifications.htmlTitle">HTML</h3>
@@ -525,7 +555,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/sql-sololearn.jpg" alt="Certificado de SQL" data-i18n-alt="certifications.sqlAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/sql-sololearn.jpg" alt="Certificado de SQL" data-i18n-alt="certifications.sqlAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.sqlIssuer">Sololearn • 2021</span>
                   <h3 data-i18n="certifications.sqlTitle">SQL</h3>
@@ -533,7 +563,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/php-sololearn.jpg" alt="Certificado de PHP" data-i18n-alt="certifications.phpAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/php-sololearn.jpg" alt="Certificado de PHP" data-i18n-alt="certifications.phpAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.phpIssuer">Sololearn • 2021</span>
                   <h3 data-i18n="certifications.phpTitle">PHP</h3>
@@ -541,7 +571,7 @@
                 </div>
               </article>
               <article class="certificate-card reveal" data-carousel-card>
-                <img src="assets/certificates/previews/professional-emails-english.jpg" alt="Certificado de Write Professional Emails in English" data-i18n-alt="certifications.emailsAlt" />
+                <img loading="lazy" decoding="async" src="assets/certificates/previews/professional-emails-english.jpg" alt="Certificado de Write Professional Emails in English" data-i18n-alt="certifications.emailsAlt" />
                 <div class="certificate-body">
                   <span class="mono" data-i18n="certifications.emailsIssuer">Georgia Tech / Coursera • 2020</span>
                   <h3 data-i18n="certifications.emailsTitle">Professional Emails in English</h3>
@@ -568,7 +598,7 @@
           </div>
           <div class="research-grid" tabindex="0">
             <article class="research-card reveal">
-              <img class="poster-preview" src="assets/kidocode-vr-poster.jpg" alt="Póster del proyecto KIDOCODE VR presentado en CompuFest 2026" data-i18n-alt="research.kidocodePosterAlt" />
+              <img class="poster-preview" loading="lazy" decoding="async" src="assets/kidocode-vr-poster.jpg" alt="Póster del proyecto KIDOCODE VR presentado en CompuFest 2026" data-i18n-alt="research.kidocodePosterAlt" />
               <div class="research-body">
                 <h3 data-i18n="research.kidocodePosterTitle">KIDOCODE VR: prototipo inmersivo para enseñar pensamiento computacional</h3>
                 <p data-i18n="research.kidocodePosterText">Póster presentado en CompuFest 2026 sobre un prototipo de realidad virtual con Meta Quest 3S para apoyar actividades de pensamiento computacional en UEMY, con evaluación exploratoria a 93 estudiantes.</p>
@@ -577,7 +607,7 @@
               </div>
             </article>
             <article class="research-card reveal">
-              <img src="assets/compufest-award.jpeg" alt="Daniel Rivas con reconocimiento de CompuFest 2026 por el proyecto KIDOCODE VR" data-i18n-alt="research.kidocodeAwardAlt" />
+              <img loading="lazy" decoding="async" src="assets/compufest-award.jpeg" alt="Daniel Rivas con reconocimiento de CompuFest 2026 por el proyecto KIDOCODE VR" data-i18n-alt="research.kidocodeAwardAlt" />
               <div class="research-body">
                 <h3 data-i18n="research.kidocodeAwardTitle">Reconocimiento CompuFest 2026</h3>
                 <p data-i18n="research.kidocodeAwardText">KIDOCODE VR fue reconocido entre las propuestas destacadas del Top 5, resaltando su enfoque en educación inmersiva, impacto comunitario y tecnología aplicada.</p>
@@ -585,16 +615,16 @@
               </div>
             </article>
             <article class="research-card reveal">
-              <img src="assets/poster_yachay-1.png" alt="Póster científico presentado en el 5th Life Science Congress 2025" data-i18n-alt="research.posterAlt" />
+              <img loading="lazy" decoding="async" src="assets/poster_yachay-1.jpg" alt="Póster científico presentado en el 5th Life Science Congress 2025" data-i18n-alt="research.posterAlt" />
               <div class="research-body">
                 <h3>Pneumothorax Prediction in Chest X-Ray Images Using EfficientNet</h3>
                 <p data-i18n="research.posterText">Trabajo enfocado en análisis de imágenes médicas y aprendizaje profundo aplicado a diagnóstico asistido.</p>
                 <p class="mono" data-i18n="research.posterMeta">Puerto Ayora, Isla Santa Cruz • Noviembre 2025</p>
-                <a class="link" href="assets/poster_yachay-1.png" target="_blank" rel="noreferrer" data-i18n="research.posterLink">Ver póster</a>
+                <a class="link" href="assets/poster_yachay-1.jpg" target="_blank" rel="noreferrer" data-i18n="research.posterLink">Ver póster</a>
               </div>
             </article>
             <article class="research-card reveal">
-              <img src="assets/galapagos.jpeg" alt="Daniel Rivas junto al póster en Galápagos" data-i18n-alt="research.photoAlt" />
+              <img loading="lazy" decoding="async" src="assets/galapagos.jpeg" alt="Daniel Rivas junto al póster en Galápagos" data-i18n-alt="research.photoAlt" />
               <div class="research-body">
                 <h3 data-i18n="research.photoTitle">Presentación de póster</h3>
                 <p data-i18n="research.photoText">Registro de la exposición del póster científico durante el congreso en Galápagos.</p>
@@ -646,6 +676,6 @@
     </div>
   </footer>
 
-  <script src="main.js?v=20260629-1"></script>
+  <script src="main.js?v=20261104-2"></script>
 </body>
 </html>

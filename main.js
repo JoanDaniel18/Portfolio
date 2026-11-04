@@ -30,8 +30,6 @@ const translations = {
       locationValue: 'Ecuador • Remoto',
       contactLabel: 'Contacto',
       portraitAlt: 'Fotografía profesional de Daniel Rivas',
-      portraitTitle: 'Fotografía profesional',
-      portraitSmall: 'Disponible a solicitud',
       specialist: 'Especialista en',
       sectors: 'dominios aplicados',
       impact: 'experiencia reciente',
@@ -57,8 +55,24 @@ const translations = {
     experience: {
       eyebrow: 'Experiencia',
       title: 'Experiencia reciente creando software útil en educación, operaciones e investigación.',
+      chRole: 'Desarrollador Full Stack',
+      chDate: 'Agosto 2026 - Actualidad',
+      chTitle: 'Cell House Importación S.A.S',
+      chStack: 'Next.js · React · TypeScript · Prisma ORM · PostgreSQL · Tailwind CSS · Zod · Vitest · Docker',
+      chPoint1:
+        'Desarrollo el software interno de una importadora de celulares y accesorios con locales en Ecuador y Colombia: dos plataformas web que comparten servidor y dominio, con bases de datos, sesiones y contenedores aislados.',
+      chPoint2:
+        'Entregué un control de asistencia por QR: códigos dinámicos con tokens rotativos (hash SHA-256 y cifrado), QR fijos de almuerzo por local y cálculo de puntualidad 100% en el servidor, sin app, huella ni GPS.',
+      chPoint3:
+        'Construyo un ERP modular con 11 módulos (ventas, inventario por IMEI, envíos entre locales, bodegas, clientes, precios) y permisos por usuario, módulo y local, sobre 24 modelos y 50 migraciones con Prisma.',
+      chPoint4:
+        'Diseñé análisis de ventas para decidir: utilidad por local, pago mixto con recargo de tarjeta, capital inmovilizado en stock y alertas de precios sospechosos.',
+      chPoint5:
+        'Creé un mapa 3D interactivo de la bodega que gira hasta la pared donde está el producto buscado, y un catálogo público para que los clientes pidan por WhatsApp.',
+      chPoint6:
+        'Aseguro la calidad con TypeScript estricto, validación con Zod y 27 suites de pruebas en Vitest sobre las reglas de negocio críticas.',
       erpRole: 'Desarrollador Full Stack - ERP y Sitio Web',
-      erpDate: 'Mayo 2026 - Actualidad',
+      erpDate: 'Mayo 2026 - Junio 2026 · 2 meses',
       erpTitle: 'Mega Mayorista - ERP y Plataforma Web',
       erpStack:
         'Java · Spring Boot · Spring Data JPA · PostgreSQL · React · JavaScript · Tailwind CSS · Docker · Nginx · Git',
@@ -116,8 +130,18 @@ const translations = {
     projects: {
       eyebrow: 'Proyectos',
       title: 'Proyectos que muestran cómo pienso, construyo y valido soluciones.',
+      statusLive: 'En desarrollo',
+      statusDone: 'Completado',
+      chTitle: 'Plataforma Cell House',
+      chText:
+        'ERP interno modular: ventas con pago mixto, inventario por IMEI con envíos y firma de entrega, mapa 3D de la bodega, catálogo de siliconas con fotos marcables y buscador de micas compatibles entre modelos.',
+      chLink: 'Ver experiencia en Cell House',
+      qrTitle: 'Control de Asistencia QR',
+      qrText:
+        'Asistencia y almuerzos para locales en Ecuador y Colombia: el empleado escanea un QR y marca desde su celular. Roles con superadministrador, alcance por país, reportes por periodo y exportación CSV.',
+      qrLink: 'Ver experiencia en Cell House',
       description:
-        'Una selección breve de trabajos que combinan producto web, VR, datos e investigación aplicada.',
+        'Una selección breve de trabajos que combinan sistemas empresariales, producto web, VR, datos e investigación aplicada.',
       kidocodeTitle: 'KIDOCODE VR',
       kidocodeText:
         'Prototipo de realidad virtual para enseñar pensamiento computacional mediante retos 3D, programación visual y feedback inmediato.',
@@ -324,8 +348,6 @@ const translations = {
       locationValue: 'Ecuador • Remote',
       contactLabel: 'Contact',
       portraitAlt: 'Professional photo of Daniel Rivas',
-      portraitTitle: 'Professional photo',
-      portraitSmall: 'Available upon request',
       specialist: 'Specialized in',
       sectors: 'applied domains',
       impact: 'recent experience',
@@ -351,8 +373,24 @@ const translations = {
     experience: {
       eyebrow: 'Experience',
       title: 'Recent experience building useful software for education, operations, and research.',
+      chRole: 'Full Stack Developer',
+      chDate: 'August 2026 - Present',
+      chTitle: 'Cell House Importación S.A.S',
+      chStack: 'Next.js · React · TypeScript · Prisma ORM · PostgreSQL · Tailwind CSS · Zod · Vitest · Docker',
+      chPoint1:
+        'I build the internal software of a phone and accessories importer with stores in Ecuador and Colombia: two web platforms sharing one server and domain, with isolated databases, sessions, and containers.',
+      chPoint2:
+        'Delivered a QR attendance system: dynamic codes with rotating tokens (SHA-256 hashing and encryption), fixed per-store lunch QR codes, and fully server-side punctuality rules, with no app, fingerprint, or GPS required.',
+      chPoint3:
+        'Building a modular ERP with 11 modules (sales, IMEI-level inventory, inter-store shipments, warehouses, clients, pricing) and per-user, per-module, per-store permissions, on 24 models and 50 Prisma migrations.',
+      chPoint4:
+        'Designed decision-oriented sales analytics: profit per store, split payments with card surcharge, capital tied up in stock, and suspicious-price alerts.',
+      chPoint5:
+        'Created an interactive 3D warehouse map that rotates to the wall holding the searched product, plus a public catalog where customers order via WhatsApp.',
+      chPoint6:
+        'Ensure quality with strict TypeScript, Zod validation, and 27 Vitest suites covering critical business rules.',
       erpRole: 'Full Stack Developer - ERP and Website',
-      erpDate: 'May 2026 - Present',
+      erpDate: 'May 2026 - June 2026 · 2 months',
       erpTitle: 'Mega Mayorista - ERP and Web Platform',
       erpStack:
         'Java · Spring Boot · Spring Data JPA · PostgreSQL · React · JavaScript · Tailwind CSS · Docker · Nginx · Git',
@@ -410,8 +448,18 @@ const translations = {
     projects: {
       eyebrow: 'Projects',
       title: 'Projects that show how I think, build, and validate solutions.',
+      statusLive: 'In development',
+      statusDone: 'Completed',
+      chTitle: 'Cell House Platform',
+      chText:
+        'Modular internal ERP: sales with split payments, IMEI-level inventory with shipments and delivery signatures, a 3D warehouse map, a photo-based case catalog with stock marks, and a cross-model screen-protector compatibility finder.',
+      chLink: 'See Cell House experience',
+      qrTitle: 'QR Attendance System',
+      qrText:
+        'Attendance and lunch tracking for stores in Ecuador and Colombia: employees scan a QR code and check in from their phone. Super-admin roles, per-country scope, period reports, and CSV export.',
+      qrLink: 'See Cell House experience',
       description:
-        'A short selection of work combining web product development, VR, data, and applied research.',
+        'A short selection of work combining business systems, web product development, VR, data, and applied research.',
       kidocodeTitle: 'KIDOCODE VR',
       kidocodeText:
         'A virtual reality prototype for teaching computational thinking through 3D challenges, visual programming, and immediate feedback.',
