@@ -1156,6 +1156,44 @@ button:focus-visible,
   color: var(--muted);
 }
 
+.price-hint {
+  display: flex;
+  gap: 8px;
+  margin: -4px 0 16px;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.price-hint::before {
+  content: "i";
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: currentColor;
+  color: #fff;
+  font-family: "Fraunces", serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-top: 1px;
+}
+
+.price-card--featured .price-hint {
+  background: rgba(242, 212, 198, 0.12);
+  color: #f6c4ad;
+}
+
+.price-card--featured .price-hint::before {
+  color: var(--ink);
+  background: #f6c4ad;
+}
+
 .price-text {
   margin: 0 0 18px;
   color: var(--muted);
