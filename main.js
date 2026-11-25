@@ -72,8 +72,8 @@ const translations = {
         'Desarrollé una visualización 3D interactiva de la bodega que orienta la vista hacia la ubicación física del producto consultado, junto con un catálogo público integrado con WhatsApp para la gestión de pedidos.',
       chPoint6:
         'Garantizo la calidad del software mediante TypeScript en modo estricto, validación de esquemas con Zod y 27 suites de pruebas automatizadas en Vitest sobre la lógica de negocio crítica.',
-      erpRole: 'Desarrollador Full Stack - ERP y Sitio Web',
-      erpDate: 'Mayo 2026 - Junio 2026 · 2 meses',
+      erpRole: 'Desarrollador Full Stack por Proyecto - ERP y Sitio Web',
+      erpDate: 'Mayo 2026 - Junio 2026 · Proyecto de 2 meses',
       erpTitle: 'Mega Mayorista - ERP y Plataforma Web',
       erpStack:
         'Java · Spring Boot · Spring Data JPA · PostgreSQL · React · JavaScript · Tailwind CSS · Docker · Nginx · Git',
@@ -450,8 +450,8 @@ const translations = {
         'Built an interactive 3D warehouse visualization that orients the view toward the physical location of the queried product, along with a public catalog integrated with WhatsApp for order management.',
       chPoint6:
         'Ensure software quality through strict-mode TypeScript, Zod schema validation, and 27 automated Vitest test suites covering critical business logic.',
-      erpRole: 'Full Stack Developer - ERP and Website',
-      erpDate: 'May 2026 - June 2026 · 2 months',
+      erpRole: 'Full Stack Developer (Project-Based) - ERP and Website',
+      erpDate: 'May 2026 - June 2026 · 2-month project',
       erpTitle: 'Mega Mayorista - ERP and Web Platform',
       erpStack:
         'Java · Spring Boot · Spring Data JPA · PostgreSQL · React · JavaScript · Tailwind CSS · Docker · Nginx · Git',
