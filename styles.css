@@ -1357,3 +1357,102 @@ button:focus-visible,
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- Scientific paper card ---------- */
+.paper-card {
+  border-color: rgba(194, 84, 43, 0.35);
+}
+
+.paper-cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 18px;
+  min-height: 320px;
+  padding: 26px 24px;
+  color: #f8f3ee;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(240, 162, 127, 0.45), transparent 45%),
+    linear-gradient(150deg, #1a1b1f 0%, #2a1d18 55%, #9a3c1f 120%);
+  overflow: hidden;
+}
+
+.paper-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(248, 243, 238, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(248, 243, 238, 0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+}
+
+.paper-cover > * {
+  position: relative;
+  z-index: 1;
+}
+
+.paper-badge {
+  align-self: flex-start;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  font-weight: 500;
+  box-shadow: 0 10px 24px rgba(194, 84, 43, 0.4);
+}
+
+.paper-venue {
+  margin: 0;
+  font-family: "Fraunces", serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.paper-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.paper-metrics > div {
+  display: grid;
+  gap: 4px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(248, 243, 238, 0.2);
+}
+
+.paper-metric {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+
+.paper-metric-label {
+  font-size: 0.8rem;
+  color: rgba(248, 243, 238, 0.7);
+}
+
+.paper-doi {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  color: rgba(248, 243, 238, 0.6);
+}
+
+.paper-authors {
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+}

@@ -276,6 +276,15 @@ const translations = {
       emailsTitle: 'Professional Emails in English',
     },
     research: {
+      paperBadge: 'Primera publicación científica',
+      paperVenue: 'ICOMTA 2026 · Atlantis Press',
+      paperIou: 'IoU de validación',
+      paperGrowth: 'área urbana predicha 2013–2024',
+      paperText: 'Flujo semiautomático que convierte imágenes satelitales multitemporales en máscaras, mapas comparativos e indicadores de expansión urbana en la Isla Santa Cruz, mediante segmentación semántica con U-Net y un encoder EfficientNet-B0.',
+      paperAuthors: 'J. D. Rivas-Andrade, P. Vizcaino-Imacaña, I. Reyes-Chacón, M. E. Morocho-Cayamcela',
+      paperMeta: 'VI International Conference on Communication and Applied Technologies • Octubre 2026 • pp. 257–266',
+      paperLink: 'Leer artículo',
+      paperPdf: 'Descargar PDF',
       eyebrow: 'Investigación',
       title: 'Investigación aplicada, prototipos educativos y reconocimientos.',
       description:
@@ -645,6 +654,15 @@ const translations = {
       emailsTitle: 'Professional Emails in English',
     },
     research: {
+      paperBadge: 'First scientific publication',
+      paperVenue: 'ICOMTA 2026 · Atlantis Press',
+      paperIou: 'validation IoU',
+      paperGrowth: 'predicted urban area 2013–2024',
+      paperText: 'A semi-automatic workflow that turns multitemporal satellite imagery into masks, comparative maps, and urban-expansion indicators for Santa Cruz Island, using U-Net semantic segmentation with an EfficientNet-B0 encoder.',
+      paperAuthors: 'J. D. Rivas-Andrade, P. Vizcaino-Imacaña, I. Reyes-Chacón, M. E. Morocho-Cayamcela',
+      paperMeta: 'VI International Conference on Communication and Applied Technologies • October 2026 • pp. 257–266',
+      paperLink: 'Read paper',
+      paperPdf: 'Download PDF',
       eyebrow: 'Research',
       title: 'Applied research, educational prototypes, and recognitions.',
       description:

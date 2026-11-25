@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=20261125-2" />
+  <link rel="stylesheet" href="styles.css?v=20261125-3" />
 </head>
 <body>
   <div class="bg-noise" aria-hidden="true"></div>
@@ -598,6 +598,33 @@
             <button class="carousel-button" type="button" aria-label="Ver elemento siguiente" data-i18n-aria-label="research.carouselNext" data-carousel-next>&gt;</button>
           </div>
           <div class="research-grid" tabindex="0">
+            <article class="research-card paper-card reveal">
+              <div class="paper-cover">
+                <span class="paper-badge" data-i18n="research.paperBadge">Primera publicación científica</span>
+                <p class="paper-venue" data-i18n="research.paperVenue">ICOMTA 2026 · Atlantis Press</p>
+                <div class="paper-metrics">
+                  <div>
+                    <span class="paper-metric">0.654</span>
+                    <span class="paper-metric-label" data-i18n="research.paperIou">IoU de validación</span>
+                  </div>
+                  <div>
+                    <span class="paper-metric">+154.8%</span>
+                    <span class="paper-metric-label" data-i18n="research.paperGrowth">área urbana predicha 2013–2024</span>
+                  </div>
+                </div>
+                <p class="paper-doi">DOI 10.2991/978-94-6239-803-0_24</p>
+              </div>
+              <div class="research-body">
+                <h3>Semi-Automatic Satelliten Image Segmentation for Urban Expansion Analysis in Santa Cruz Island, Galápagos</h3>
+                <p data-i18n="research.paperText">Flujo semiautomático que convierte imágenes satelitales multitemporales en máscaras, mapas comparativos e indicadores de expansión urbana en la Isla Santa Cruz, mediante segmentación semántica con U-Net y un encoder EfficientNet-B0.</p>
+                <p class="paper-authors" data-i18n="research.paperAuthors">J. D. Rivas-Andrade, P. Vizcaino-Imacaña, I. Reyes-Chacón, M. E. Morocho-Cayamcela</p>
+                <p class="mono" data-i18n="research.paperMeta">VI International Conference on Communication and Applied Technologies • Octubre 2026 • pp. 257–266</p>
+                <div class="paper-links">
+                  <a class="link" href="https://www.atlantis-press.com/proceedings/icomta-26/126028164" target="_blank" rel="noreferrer" data-i18n="research.paperLink">Leer artículo</a>
+                  <a class="link" href="https://www.atlantis-press.com/article/126028164.pdf" target="_blank" rel="noreferrer" data-i18n="research.paperPdf">Descargar PDF</a>
+                </div>
+              </div>
+            </article>
             <article class="research-card reveal">
               <img class="poster-preview" loading="lazy" decoding="async" src="assets/kidocode-vr-poster.jpg" alt="Póster del proyecto KIDOCODE VR presentado en CompuFest 2026" data-i18n-alt="research.kidocodePosterAlt" />
               <div class="research-body">
@@ -766,6 +793,6 @@
     </div>
   </footer>
 
-  <script src="main.js?v=20261125-2"></script>
+  <script src="main.js?v=20261125-3"></script>
 </body>
 </html>
