@@ -1089,3 +1089,233 @@ button:focus-visible,
     width: 100%;
   }
 }
+
+/* ---------- Pricing ---------- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.price-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 28px;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid rgba(26, 27, 31, 0.08);
+  box-shadow: 0 16px 40px rgba(26, 27, 31, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.45s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(194, 84, 43, 0.4);
+  box-shadow: 0 26px 54px rgba(26, 27, 31, 0.14);
+}
+
+.price-card h3 {
+  margin: 0 0 14px;
+  font-size: 1.35rem;
+}
+
+.price-tag {
+  margin: 0 0 8px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.price-amount {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 8px;
+  margin: 0 0 14px;
+}
+
+.price-from {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.price-value {
+  font-family: "Fraunces", serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ink);
+}
+
+.price-unit {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.price-text {
+  margin: 0 0 18px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.price-list {
+  list-style: none;
+  margin: 0 0 26px;
+  padding: 18px 0 0;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 11px;
+  flex: 1;
+  align-content: start;
+}
+
+.price-list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  line-height: 1.45;
+}
+
+.price-check {
+  flex: 0 0 auto;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  padding: 2px;
+  border-radius: 50%;
+  fill: var(--accent-dark);
+  background: var(--accent-soft);
+}
+
+.price-cta {
+  width: 100%;
+}
+
+.price-card--featured {
+  background: var(--ink);
+  color: #f8f3ee;
+  border-color: var(--ink);
+  box-shadow: 0 30px 70px rgba(26, 27, 31, 0.28);
+}
+
+.price-card--featured:hover {
+  border-color: var(--accent);
+  box-shadow: 0 34px 80px rgba(26, 27, 31, 0.34);
+}
+
+.price-card--featured .price-tag {
+  color: #f0a27f;
+}
+
+.price-card--featured .price-value {
+  color: #fff;
+}
+
+.price-card--featured .price-from,
+.price-card--featured .price-unit,
+.price-card--featured .price-text {
+  color: rgba(248, 243, 238, 0.72);
+}
+
+.price-card--featured .price-list {
+  border-top-color: rgba(248, 243, 238, 0.16);
+}
+
+.price-card--featured .price-check {
+  fill: #fff;
+  background: var(--accent);
+}
+
+.price-badge {
+  position: absolute;
+  top: -13px;
+  right: 24px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.74rem;
+  font-weight: 500;
+  box-shadow: 0 10px 24px rgba(194, 84, 43, 0.35);
+}
+
+.price-card--ideas {
+  background: linear-gradient(160deg, #fff 0%, #fbf1ea 100%);
+}
+
+.process {
+  margin-top: 40px;
+  padding: 30px;
+  border-radius: var(--radius-lg);
+  background: #fff;
+  border: 1px solid rgba(26, 27, 31, 0.08);
+}
+
+.process h3 {
+  margin: 0 0 20px;
+}
+
+.process-steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+  counter-reset: none;
+}
+
+.process-steps li {
+  display: grid;
+  gap: 6px;
+  padding-top: 14px;
+  border-top: 2px solid var(--accent-soft);
+}
+
+.process-number {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+.process-steps span:last-child {
+  color: var(--muted);
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.price-note {
+  margin: 18px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (max-width: 1000px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 560px;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .price-card {
+    padding: 26px 20px;
+  }
+
+  .process {
+    padding: 22px 18px;
+  }
+
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}
